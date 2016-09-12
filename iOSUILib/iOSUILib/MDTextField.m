@@ -741,8 +741,8 @@
   }
 
   [self updateTextLength:text.length];
-  if ([_delegate respondsToSelector:@selector(textFieldDidChange:)]) {
-    [_delegate textFieldDidChange:self];
+  if ([_delegate respondsToSelector:@selector(mdTextFieldChanged:)]) {
+    [_delegate mdTextFieldChanged:self];
   }
   [self sendActionsForControlEvents:UIControlEventEditingChanged];
 }

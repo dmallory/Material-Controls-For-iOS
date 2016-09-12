@@ -141,7 +141,7 @@
   activeField = nil;
 }
 
-- (void)textFieldDidChange:(MDTextField *)textField {
+- (void)mdTextFieldChanged:(MDTextField *)textField {
   // if textfield is characterCounterTextField
   if (textField.tag == 1) {
     if (textField.text.length > textField.maxCharacterCount) {

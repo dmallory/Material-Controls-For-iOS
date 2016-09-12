@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-- (void)textFieldDidChange:(MDTextField *)textField;
+- (void)mdTextFieldChanged:(MDTextField *)textField;
 
 - (BOOL)textFieldShouldBeginEditing:
     (MDTextField *)textField; // return NO to disallow editing.
